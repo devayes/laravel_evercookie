@@ -25,7 +25,7 @@ Evercookie is a javascript API available that produces extremely persistent cook
     java: false, // Java applet on/off... may prompt users for permission to run.
     tests: 10,  // 1000 what is it, actually?
     silverlight: false, // you might want to turn it off https://github.com/samyk/evercookie/issues/45
-    baseurl: '/ec', // base url mydomain.com/foo = /foo
+    baseurl: '', // base url mydomain.com/foo = /foo
     asseturi: '/assets', // assets = .fla, .jar, etc
     phpuri: '/ec', // php file path or route
     authPath: false,  // set to false to disable Basic Authentication cache
@@ -47,6 +47,6 @@ Evercookie is a javascript API available that produces extremely persistent cook
 ```
 
 ####Notes:
-- Uhhh.
+- If you change cookie names, paths, or `phpuri` you'll need to update the routes.
 
 **All thanks to [Samy Kamkar - Evercookie, never forget.](http://samy.pl/evercookie)**
