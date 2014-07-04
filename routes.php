@@ -1,3 +1,4 @@
+<?php
 /* 
 Examples:
   /ec/cache
