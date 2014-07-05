@@ -18,7 +18,7 @@ Route::group(array('prefix' => 'ec'), function() {
         return $response;
     });
     Route::get('etag', function(){ 
-        if (!isset($_COOKIE["ec_etag"])) {
+        if (empty($_COOKIE["ec_etag"])) {
             $response = Response::make(null, 304);
             $response->header('If-None-Match', '*');
             return $response;
