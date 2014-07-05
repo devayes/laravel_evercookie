@@ -7,7 +7,7 @@ Examples:
 */ 
 Route::group(array('prefix' => 'ec'), function() {
     Route::get('cache', function(){ 
-        if (!isset($_COOKIE["ec_cache"])) {
+        if (empty($_COOKIE["ec_cache"])) {
             return Response::make(null, 304);
         }
         $response = Response::make($_COOKIE["ec_cache"], 200);
@@ -28,7 +28,7 @@ Route::group(array('prefix' => 'ec'), function() {
         return $response;
     });
     Route::get('png', function(){ 
-        if (!isset($_COOKIE["ec_png"])) {
+        if (empty($_COOKIE["ec_png"])) {
             return Response::make(null, 304);
         }
         $x = 200; $y = 1;
