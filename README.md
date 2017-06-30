@@ -1,4 +1,4 @@
-Evercookie routes for Laravel 4
+Evercookie routes for Laravel 4 & 5+
 ==================
 
 ### Description:
