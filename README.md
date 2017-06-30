@@ -1,20 +1,20 @@
 Evercookie routes for Laravel 4
 ==================
 
-###Description:
+### Description:
 Evercookie is a javascript API available that produces extremely persistent cookies in a browser. Its goal is to identify a client even after they've removed standard cookies, Flash cookies (Local Shared Objects or LSOs), and others. [Read more &raquo;](http://samy.pl/evercookie)
 
-###Requirements:
+### Requirements:
 - [Evercookie](https://github.com/samyk/evercookie)
 - [Laravel](http://laravel.com)
 - [PHP GD Module with PNG Support](http://www.php.net/manual/en/book.image.php)
 
-###Install:
+### Install:
 - Copy contents of *routes.php* into *app/routes.php*
 - Install [Evercookie](https://github.com/samyk/evercookie)
 - Use the below example, flavor to taste.
 
-###Example:
+### Example:
 
 ```javascript
 <script src="{{ asset('js/evercookie.js') }}"></script>
@@ -46,7 +46,7 @@ Evercookie is a javascript API available that produces extremely persistent cook
 </script>
 ```
 
-####Notes:
+#### Notes:
 - If you change cookie names, paths, or `phpuri` you'll need to update the routes.
 
 **All thanks to [Samy Kamkar - Evercookie, never forget.](http://samy.pl/evercookie)**
